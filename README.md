@@ -1,33 +1,43 @@
 # BSM
 
-assembly but boon
+Assembly but it's boon4681
 
-## Memory
+## Registers
 
-register A
+register A // general
 
-register B
+register B // general
 
-register C
+register C // general
 
 register T // temporary
 
 ## Instructions
 
-**SET \<A> \<VALUE:I32>**
+```
+SET <A> <VALUE>
+    Set register <A> with <VALUE>
 
-**CMP \<A> \<B>**
+CMP <A> <B>
+    Compare value <A> with value <B>
 
-**JMPZ \<LINE>**
+JMPZ <LINE>
+    Jump to <LINE> if T reg is zero
+JMP <LINE>
+    Jump to <LINE> ifT reg is not zero
 
-**JMP \<LINE>**
+ADD <A> <VALUE>
+    Add <A> reg by <VALUE>
 
-**ADD \<A> \<B>**
+SUB <A> <VALUE>
+    Subtract <A> reg by <VALUE>
 
-**SUB \<A> \<B>**
+MULT <A> <VALUE>
+    Multiple <A> reg by <VALUE>
 
-**MULT \<A> \<B>**
+DIV <A> <VALUE>
+    Divine <A> reg by <VALUE>
 
-**DIV \<A> \<B>**
-
-**PRNT \<A>**
+PRNT <VALUE>
+    Print <VALUE> to screen
+```
