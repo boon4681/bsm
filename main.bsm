@@ -1,6 +1,13 @@
 
-SET A, 10
-PRNT A
-SUB A, 1
-CMP A, 0
-JMP 2
+
+Hello:
+    PRNT A
+    SUB A, 1
+    CMP A, 0
+    JMP 1
+
+START:
+    SET A, 10
+    CALL Hello
+    SET A, 5
+    CALL Hello
